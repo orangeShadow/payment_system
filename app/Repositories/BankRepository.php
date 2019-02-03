@@ -168,16 +168,15 @@ class BankRepository
      */
     protected function searchPayments(PaymentRequest $request, int $purse_id)
     {
-
         $startDt = $request->get('start_dt');
         $endDt = $request->get('end_dt');
 
         return Payment::where(function ($query) use ($purse_id) {
             return $query->where('purse_from', $purse_id)->orWhere('purse_to', $purse_id);
         })->when($startDt, function ($query, $startDt) {
-            return $query->where('created_at', '>=', $startDt);
+            return $query->where('payments.created_at', '>=', $startDt);
         })->when($endDt, function ($query, $endDt) {
-            return $query->where('created_at', '<=', $endDt);
+            return $query->where('payments.created_at', '<=', $endDt);
         })->with('purseFrom')->with('purseTo')->get();
     }
 
@@ -205,10 +204,10 @@ class BankRepository
                 return $query->where('name', $name);
             })
             ->when($startDt, function ($query, $startDt) {
-                return $query->where('created_at', '>=', $startDt);
+                return $query->where('pf.created_at', '>=', $startDt);
             })
             ->when($endDt, function ($query, $endDt) {
-                return $query->where('created_at', '<=', $endDt);
+                return $query->where('pf.created_at', '<=', $endDt);
             })
             ->groupBy(['u.id', 'u.name', 'p.currency']);
 
@@ -226,10 +225,10 @@ class BankRepository
                 return $query->where('name', $name);
             })
             ->when($startDt, function ($query, $startDt) {
-                return $query->where('created_at', '>=', $startDt);
+                return $query->where('pt.created_at', '>=', $startDt);
             })
             ->when($endDt, function ($query, $endDt) {
-                return $query->where('created_at', '<=', $endDt);
+                return $query->where('pt.created_at', '<=', $endDt);
             })
             ->groupBy(['u.id', 'u.name', 'p.currency']);
 
@@ -247,6 +246,4 @@ class BankRepository
 
         return $total;
     }
-
-
 }

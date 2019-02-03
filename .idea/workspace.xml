@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6a47cd6-0ee8-4709-a0e9-5eab79d06d86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Exceptions/PurseChangeCurrencyException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reports/XmlReport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reports/XmlReport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/BankRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/BankRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,10 +66,10 @@
           <entry key="example" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="4" />
-          <entry key="log" value="18" />
+          <entry key="log" value="20" />
           <entry key="migrations" value="7" />
           <entry key="payments" value="23" />
-          <entry key="php" value="291" />
+          <entry key="php" value="294" />
           <entry key="purses" value="19" />
           <entry key="rates" value="9" />
           <entry key="scss" value="2" />
@@ -80,12 +82,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="3" />
-          <entry key="ANSI Aware" value="18" />
+          <entry key="ANSI Aware" value="20" />
           <entry key="Blade" value="2" />
           <entry key="Database Element" value="87" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="289" />
+          <entry key="PHP" value="292" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="2" />
           <entry key="SQL" value="2" />
@@ -104,7 +106,7 @@
           <entry key="js" value="361" />
           <entry key="json" value="42" />
           <entry key="log" value="1" />
-          <entry key="php" value="33070" />
+          <entry key="php" value="33767" />
           <entry key="scss" value="97" />
           <entry key="sql" value="2479" />
           <entry key="txt" value="70" />
@@ -119,7 +121,7 @@
           <entry key="HTML" value="14" />
           <entry key="JSON" value="42" />
           <entry key="JavaScript" value="365" />
-          <entry key="PHP" value="32086" />
+          <entry key="PHP" value="32783" />
           <entry key="PLAIN_TEXT" value="189" />
           <entry key="SCSS" value="97" />
           <entry key="SQL" value="123" />
@@ -139,10 +141,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Reports/CsvReport.php">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/BankRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="247" column="5" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
+              <folding>
+                <element signature="e#62#102#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,8 +155,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Reports/XmlReport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="204">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3433" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/PaymentRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="19" />
+              <folding>
+                <element signature="e#37#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Reports/CsvReport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="45" column="9" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -256,19 +289,19 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3a3dc183-f29c-4e52-b1ce-af9fd24142de/console_1.sql" />
         <option value="$PROJECT_DIR$/src/Contracts/ReportContractInterface.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/PaymentRequest.php" />
         <option value="$PROJECT_DIR$/src/Core/Reports/HtmlReport.php" />
         <option value="$PROJECT_DIR$/resources/views/report.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/BankController.php" />
         <option value="$PROJECT_DIR$/resources/views/report.blade.php" />
         <option value="$PROJECT_DIR$/app/Reports/AbstractReport.php" />
         <option value="$PROJECT_DIR$/app/Reports/HtmlReport.php" />
-        <option value="$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log" />
-        <option value="$PROJECT_DIR$/app/Reports/XmlReport.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_27_115444_create_payments_table.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/InvalidCurrencyException.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/BankRepository.php" />
         <option value="$PROJECT_DIR$/app/Reports/CsvReport.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log" />
+        <option value="$PROJECT_DIR$/app/Reports/XmlReport.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/PaymentRequest.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/BankRepository.php" />
       </list>
     </option>
   </component>
@@ -432,6 +465,19 @@
               <item name="payments" type="b2602c69:ProjectViewProjectNode" />
               <item name="payments" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payments" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="payments" type="b2602c69:ProjectViewProjectNode" />
+              <item name="payments" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -504,7 +550,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/storage/logs/laravel-2019-02-01.log&#10;/Users/AntonAlexeev/Web/Sites/payments/.env" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log&#10;/Users/AntonAlexeev/Web/Sites/payments/storage/logs/laravel-2019-02-01.log&#10;/Users/AntonAlexeev/Web/Sites/payments/.env" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -564,12 +610,12 @@
       <workItem from="1548945875448" duration="20025000" />
       <workItem from="1549011328802" duration="71405000" />
       <workItem from="1549195069407" duration="4640000" />
-      <workItem from="1549200052902" duration="12404000" />
+      <workItem from="1549200052902" duration="15520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164312000" />
+    <option name="totallyTimeSpent" value="167428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,7 +634,7 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21959943" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.4110953" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4110953" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.32859176" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
@@ -874,16 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PaymentRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#37#80#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Contracts/RateableInterface.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -925,30 +961,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Reports/XmlReport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_27_115444_create_payments_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/BankRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="111" column="102" lean-forward="true" selection-start-line="111" selection-start-column="102" selection-end-line="111" selection-end-column="102" />
-          <folding>
-            <element signature="e#62#102#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,10 +998,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Reports/XmlReport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-02-03.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3433" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Reports/CsvReport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+        <state relative-caret-position="309">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/PaymentRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#37#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/BankRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="247" column="5" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="5" />
+          <folding>
+            <element signature="e#62#102#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
