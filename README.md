@@ -23,8 +23,11 @@ Send money
 POST: /api/v1/remittance
 params: (int)user_from*, (int)user_to*, currency, amount 
 
+---
+Currencies would be load with migration
 
-currency - USD, EUR, RUB, CHR ...
+USD, EUR, RUB, CHR ...
+
 
 
 For compile interface run:
