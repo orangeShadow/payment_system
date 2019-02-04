@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Repositories;
 
 use App\Http\Requests\AddBalanceRequest;
-use App\Http\Requests\ExchangeRequest;
+use App\Http\Requests\RemittanceRequest;
 use App\Http\Requests\PaymentRequest;
 use App\Rate;
 use App\Payment;
@@ -94,19 +94,19 @@ class BankRepository
     }
 
     /**
-     * @param ExchangeRequest $request
+     * @param RemittanceRequest $request
      * @return Payment
      * @throws NotEnoughMoneyException
      * @throws \Throwable
      */
-    public function remittance(ExchangeRequest $request): Payment
+    public function remittance(RemittanceRequest $request): Payment
     {
         $userFrom = User::findOrFail($request->get('user_from'));
         $userTo = User::findOrFail($request->get('user_to'));
 
         $moneyUsed = new Money($request->get('amount'), $request->get('currency'));
 
-        if ($moneyUsed->getCurrency() !== $userFrom->purse->getCurrency() ||
+        if ($moneyUsed->getCurrency() !== $userFrom->purse->getCurrency() &&
             $moneyUsed->getCurrency() !== $userTo->purse->getCurrency()
         ) {
             throw new InvalidCurrencyException("You can`t use {$moneyUsed->getCurrency()} currency!");

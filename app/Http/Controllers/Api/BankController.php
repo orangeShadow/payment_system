@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\AddBalanceRequest;
 use App\Http\Requests\AddCurrencyRateRequest;
-use App\Http\Requests\ExchangeRequest;
+use App\Http\Requests\RemittanceRequest;
 use App\Http\Requests\PaymentRequest;
 use App\Http\Resources\PaymentResource;
 use App\Repositories\BankRepository;
@@ -76,10 +76,10 @@ class BankController extends Controller
     }
 
     /**
-     * @param ExchangeRequest $request
+     * @param RemittanceRequest $request
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
-    public function remittance(ExchangeRequest $request)
+    public function remittance(RemittanceRequest $request)
     {
         try {
             return response(new PaymentResource($this->bankRepository->remittance($request)));
@@ -90,6 +90,13 @@ class BankController extends Controller
                 ],
                 'message' => 'The given data was invalid.'
             ], 422);
+        } catch (ModelNotFoundException $exception) {
+            if (strpos($exception->getMessage(), 'App\Rate') > 0) {
+                return response(['errors'  => ['currency' => 'Sorry rate for this currency on current date not found!'],
+                                 'message' => 'The given data was invalid.'], 422);
+            }
+
+            return response(['message' => 'Sorry user with this name is not found!'], 404);
         } catch (\Throwable $exception) {
             \Log::error('Remittance', ['exception' => $exception]);
 

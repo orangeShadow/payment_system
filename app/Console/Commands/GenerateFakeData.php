@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use App\Http\Requests\AddBalanceRequest;
 use App\Http\Requests\AddCurrencyRateRequest;
-use App\Http\Requests\ExchangeRequest;
+use App\Http\Requests\RemittanceRequest;
 use App\Http\Requests\UserCreateRequest;
 use App\Payment;
 use App\Purse;
@@ -89,12 +89,12 @@ class GenerateFakeData extends Command
             ]));
         });
 
-        factory(Payment::class, 100000)->make()->each(function ($payment) {
+        factory(Payment::class, 1000)->make()->each(function ($payment) {
             try {
                 $purseFrom = Purse::find($payment->purse_from);
                 $purseTo = Purse::find($payment->purse_to);
 
-                $this->bankRepository->remittance(new ExchangeRequest([
+                $this->bankRepository->remittance(new RemittanceRequest([
                     'user_from' => $purseFrom->user->id,
                     'user_to'   => $purseTo->user->id,
                     'amount'    => (string)$payment->amount_to,
